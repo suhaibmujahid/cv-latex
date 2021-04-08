@@ -1,0 +1,24 @@
+\makerubrichead{Research Publications}
+
+%% Assuming you've already given \addbibresource{own-bib.bib} in the main doc.
+\nocite{*}
+
+%% If you just want everything in one list
+% \printbibliography[heading={none}]
+
+\newrefcontext[labelprefix=J]
+\printbibliography[heading={subbibliography},title={Journal Articles},type=article]
+
+\newrefcontext[labelprefix=C]
+\printbibliography[heading={subbibliography},title={Conference Proceedings},type=inproceedings]
+
+% \newrefcontext[labelprefix=B]
+% \printbibliography[heading={subbibliography},title={Books and Chapters},filter={booksandchapters}]
+
+\newrefcontext[labelprefix=T]
+\printbibliography[heading={subbibliography},title={Theses},type=thesis]
+
+\newrefcontext[labelprefix=S]
+\printbibliography[heading={subbibliography},title={Submitted Papers},type=unpublished]
+
+% \printbibliography[heading=subbibliography]
